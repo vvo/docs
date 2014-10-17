@@ -1,6 +1,6 @@
 # Welcome to Netlify
 
-Netlify builds, deploys and hosts your front end.
+[Netlify](http://www.netlify.com) builds, deploys and hosts your front end.
 
 ## Quckstart
 
