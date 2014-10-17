@@ -49,7 +49,7 @@ To configure continuous deployment for a front end project or a static site gene
 Netlify init will guide you through the process of configuring continuous deployment.
 
 
-## Site Names, Custom Domains and Passwords
+## Names, Domains and Passwords
 
 ```
 netlify update
