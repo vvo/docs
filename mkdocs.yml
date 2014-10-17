@@ -9,4 +9,5 @@ pages:
   - ['cli.md', 'Command Line']
   - ['continuous_deployment.md', 'Continuous Deployment']
   - ['custom_domains.md', 'Custom Domains']
-  - ['redirects.md', 'Redirect & Rewrite Rules']  
+  - ['redirects.md', 'Redirect & Rewrite Rules']
+  - ['headers_and_basic_auth.md', 'Headers & Basic Auth']
