@@ -2,7 +2,10 @@ site_name: Netlify Documentation
 site_description: Netlify builds, deploys and hosts your front end projects
 theme_dir: readthedocs/
 repo_url: https://github.com/netlify/docs
+extra_css:
+  - /css/custom.css
 pages:
   - ['index.md', 'Home']
   - ['cli.md', 'Command Line']
+  - ['continuous_deployment.md', 'Continuous Deployment']
   - ['custom_domains.md', 'Custom Domains']
