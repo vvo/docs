@@ -2,13 +2,25 @@
 
 Netlify builds, deploys and hosts your front end.
 
-## Overview
+## Quckstart
 
-This site is a great example of a project built on Netlify.
+Deploying a new site with Netlify is so simple it fits in a tweet:
 
-All of our documentation is in a [Github repository](https://www.github.com/netlify/docs).
+```
+npm install netlify -g
+cd my-site-folder
+netlify deploy
+```
 
-Whenever we push to Github or accept a pull request, Netlify will do a clean build of the documentation with [mkdocs](http://www.mkdocs.org/) and deploy the result.
+This is all you need to deploy a static site folder, but Netlify can do much more for you.
+
+## Continuous Deployment
+
+For anything larger than a one page landing, you really should be using a static site generator or a front-end build tool like grunt or gulp.
+
+If you're using any of those, Netlify can make the process of collaborating and deploying much smoother.
+
+Netlify lets you link a Github repository to a site. Each time you push to Github, Netlify runs a build with your tool of choice and deploys the result to our powerful CDN.
 
 ## Getting Started
 
@@ -23,3 +35,11 @@ npm install netlify
 cd ~/my-static-website
 netlify deploy
 ```
+
+## Netlify's Docs
+
+This site is a great example of a project built on Netlify.
+
+All of our documentation is in a [Github repository](https://www.github.com/netlify/docs).
+
+Whenever we push to Github or accept a pull request, Netlify will do a clean build of the documentation with [mkdocs](http://www.mkdocs.org/) and deploy the result.
