@@ -29,7 +29,7 @@ The first time you deploy a new site will be created and netlify will prompt for
 You can specify an environment for any command with the -e flag. Each environment can have its own settings. This makes it very easy to setup different sites for staging and production.
 
 ```
-netlify deploy dist -e production
+netlify deploy -e production
 ```
 
 
