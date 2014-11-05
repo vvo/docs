@@ -15,18 +15,13 @@ npm install netlify-cli -g
 ## Manual Deploy
 
 ```
-netlify deploy [path]
+netlify deploy
 ```
 
 The `netlify deploy` command will deploy a site, whether it's a new site or an existing site.
 
-If you're in the root folder of your project and the static site is under `/dist`, deploy via:
 
-```
-netlify deploy dist
-```
-
-If you leave out the directory the current dir will be used. The first time you deploy a new site will be created. Netlify stores the site id and the folder in a local `.netlify` file. After the first deploy you can simply run `netlify deploy` to deploy again
+The first time you deploy a new site will be created and netlify will prompt for the path to deploy. Netlify stores the site id and the folder in a local `.netlify` file. After the first deploy you can simply run `netlify deploy` to deploy again
 
 
 ## Environments
