@@ -7,7 +7,7 @@
 Deploying a new site with Netlify is so simple it fits in a tweet:
 
 ```
-npm install netlify -g
+npm install netlify-cli -g
 cd my-site-folder
 netlify deploy
 ```
