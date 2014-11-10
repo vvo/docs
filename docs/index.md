@@ -24,9 +24,9 @@ Netlify lets you link a Github repository to a site. Each time you push to Githu
 
 ## Getting Started
 
-Netlify can be used both from our web UI at [app.netlify.com](http://netlify-dev.bitballoon.com) or by using our [command line tools](cli.md).
+Netlify can be used both from our web UI at [app.netlify.com](http://app.netlify.com) or by using our [command line tools](cli.md).
 
-To start with the web UI, simply head to [app.netlify.com](http://netlify-dev.bitballoon.com) and sign in.
+To start with the web UI, simply head to [app.netlify.com](http://app.netlify.com) and sign in.
 
 To start by manually deploying a folder with a static site to Netlify, make sure you have `node js` installed and then follow these steps:
 
