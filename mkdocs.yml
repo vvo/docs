@@ -11,3 +11,5 @@ pages:
   - ['custom_domains.md', 'Custom Domains']
   - ['redirects.md', 'Redirect & Rewrite Rules']
   - ['headers_and_basic_auth.md', 'Headers & Basic Auth']
+  - ['webhooks.md', 'Webhooks']
+  - ['api.md', 'API']
