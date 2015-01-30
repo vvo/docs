@@ -24,7 +24,7 @@ You can specify the HTTP status code for the rewrite. The default is 301 which w
     /pass-through /index.html    200
     /ecommerce    /store-closed  404
 
-When the status code is 301, 302 or 303 BitBalloon will redirect to the target url. With any other status code BitBalloon will render the target url with the specified status code.
+When the status code is 301, 302 or 303 Netlify will redirect to the target url. With any other status code Netlify will render the target url with the specified status code.
 
 This means that you can define **rewrite** rules as well as **redirects** by specifying 200 as the status code.
 
