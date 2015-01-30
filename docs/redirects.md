@@ -58,6 +58,14 @@ If you're developing a single page app and want history pushstate to work so you
 This will effectively serve the index.html instead of giving a 404 no matter what URL the browser requests.
 
 
+## Proxying
+
+Just like you can rewrite paths like `/*` to `/index.html`, you can also setup rules to let parts of your site proxy to external services. Lets say you need to communicate from a Single Page App with an API on https://api.example.com that doesn't support CORS request. The following rule will let you use /api/ from your JavaScript client:
+
+    /api/*  https://api.example.com/:splat  200
+
+Now all requests to /api/... will be proxied through to https://api.example.com straight from our CDN servers. If the API supports standard HTTP caching mechanisms like Etags or Last-Modified headers, the responses will even get cached by CDN nodes.
+
 ## Note on shadowing
 
 You currently can't shadow a URL that actually exists within the site. This means that even if you've setup the following rewrite rule:
