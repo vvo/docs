@@ -2,7 +2,7 @@
 
 This is the documentation for Netlify.
 
-It's built with [mkdocs](mkdocs.org), a static site generator for documentation.
+It's built with [mkdocs](http://www.mkdocs.org), a static site generator for documentation.
 
 We use Netlify for continuous deployment, so every time we accepts a pull request for this repository the changes will automatically be rebuilt and deployed to http://docs.netlify.com
 
