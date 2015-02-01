@@ -73,7 +73,7 @@ When using netlify.authenticate with an OAuth1 API you get back an object with a
 
 A jQuery Ajax request to the BitBucket API to get a users repositories would look like:
 
-````js
+```js
 $.ajax({
   url: "/bitbucket/1.0/user/repositories",
   headers: {
