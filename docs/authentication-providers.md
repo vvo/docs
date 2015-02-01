@@ -77,7 +77,7 @@ A jQuery Ajax request to the BitBucket API to get a users repositories would loo
 $.ajax({
   url: "/bitbucket/1.0/user/repositories",
   headers: {
-    Authorization: "Authorization: token: " + token + ", oauth_token_secret: " + secret
+       Authorization: "oauth_token: " + token + ", oauth_token_secret: " + secret
   }
 }).then(function(data) { console.log("Got repositories: %o", data); });
 ```
