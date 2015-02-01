@@ -12,4 +12,5 @@ pages:
   - ['redirects.md', 'Redirect & Rewrite Rules']
   - ['headers_and_basic_auth.md', 'Headers & Basic Auth']
   - ['webhooks.md', 'Webhooks']
+  - ['authentication-providers.md', 'OAuth Providers']
   - ['api.md', 'API']
