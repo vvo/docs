@@ -13,4 +13,5 @@ pages:
   - ['headers_and_basic_auth.md', 'Headers & Basic Auth']
   - ['webhooks.md', 'Webhooks']
   - ['authentication-providers.md', 'OAuth Providers']
+  - ['github-permissions.md', 'Github Permissions']
   - ['api.md', 'API']
