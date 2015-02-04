@@ -19,6 +19,7 @@ Make sure to include your build tool in these dependencies:
 
 * If you're using Jekyll, make sure to add a Gemfile that requires the jekyll gem
 * If you're using Grunt, make sure to add a package.json with grunt-cli as a dependency
+* If you're using Roots, make sure to install roots in your local package.json and not just globally
 * If you're using mkdocs, make sure to add a requirements.txt with mkdocs>=0.9.0
 
 # Dependency Cache
