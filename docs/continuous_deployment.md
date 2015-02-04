@@ -35,3 +35,4 @@ Build Tool | Directory | Command
 Jekyll     | _site     | jekyll build
 Grunt      | dist      | grunt build
 Middleman  | build     | middleman build
+Roots      | public    | roots compile
