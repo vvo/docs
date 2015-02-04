@@ -12,7 +12,7 @@ Once you authorize Netlify, we fetch an Access Token from Github. But we **never
 
 If you're still worried about granting access to sensitive repositories, Github lets you restrict application access for organizations.
 
-![settings-third-party-restrict-confirm.png](uploads/settings-third-party-restrict-confirm.png)
+![settings-third-party-restrict-confirm.png](/uploads/settings-third-party-restrict-confirm.png)
 
 Once these restrictions is in place, Netlify will no longer get any kind of access to the repositories from this organization unless you explicitly whitelists our API application.
 
