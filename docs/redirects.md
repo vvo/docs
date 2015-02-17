@@ -48,6 +48,15 @@ You can use the splat in your rewrites or redirects like this:
 
 This would redirects paths like `/news/2004/01/10/my-story` to `/blog/2004/01/10/my-story`
 
+## Query Params
+
+You can also use query parameters in your URL matches. The following match witll redirect a URL like: `/store?id=my-blog-post` to `/blog/my-blog-post` with a `301` redirect.
+
+```
+/story id=:id  /blog/:id  301
+```
+
+Just add separate key/value pairs separated by space to match more than one query parameter.
 
 ## History Pushstate and Single Page Apps
 
