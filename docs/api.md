@@ -311,7 +311,7 @@ Put File
 
 * `PUT /sites/{site_id}/files/{path-to-file}` will add or update a file, reprocess all assets and create a new deploy
 
-The request body will be used as the new content for this file. If the site is still in uploading mode (after creating a site with a list of files) and this is the last file
+The request body will be used as the new content for this file. If the site is still in uploading mode (after creating a site with a list of files) and this is the last file, it will start the processing of the site.
 
 Delete File
 -----------
