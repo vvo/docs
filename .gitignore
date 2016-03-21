@@ -1,1 +1,5 @@
-site/
+.DS_Store
+*.bk
+*.pyc
+*.swp
+db/*
