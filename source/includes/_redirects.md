@@ -4,6 +4,9 @@ You can configure redirects and rewrite rules for your Netlify site by adding a 
 
 
 ## Basic redirects
+
+Setting up basic redirects is dead simple:
+
 ```
     # Simple redirects from one path to another
     /home              /
@@ -12,14 +15,14 @@ You can configure redirects and rewrite rules for your Netlify site by adding a 
     /google            https://www.google.com
 ```
 
-Setting up basic redirects is dead simple -->
-
 Just list the original path followed by the new path or URL.
 
-Any # indicates a comment and everything following the pound sign will be ignored.
+Any `#` indicates a comment and everything following the pound sign will be ignored.
 
 
 ## HTTP Status Codes
+
+You can specify the HTTP status code for the rewrite. The default is 301 which will do a permanent redirect.
 
 ```
     # Redirect with a 301
@@ -34,7 +37,6 @@ Any # indicates a comment and everything following the pound sign will be ignore
     # Show a custom 404 for this path
     /ecommerce    /store-closed  404
 ```
-You can specify the HTTP status code for the rewrite. The default is 301 which will do a permanent redirect.
 
 When the status code is 301, 302 or 303 Netlify will redirect to the target url. With any other status code Netlify will render the target url with the specified status code.
 
@@ -58,10 +60,12 @@ We don't do automatic redirects from `/about/index.html` to `/about/` since the 
 
 
 ## Placeholders
+
+You can use placeholders in the origin and target paths:
+
 ```
     /news/:year/:month:/:date/:slug  /blog/:year/:month/:date/:slug
 ```
-You can use placeholders in the origin and target paths -->
 
 This would redirect a URL like `/news/2004/02/12/my-story` to `/blog/2004/02/12/my-story`
 
@@ -70,59 +74,61 @@ This would redirect a URL like `/news/2004/02/12/my-story` to `/blog/2004/02/12/
 
 An asterisk indicates a **splat** that will match anything that follows
 
+You can use the splat in your rewrites or redirects like this:
+
 ```
     /news/*  /blog/:splat
 ```
-
-You can use the splat in your rewrites or redirects like this -->
 
 This would redirects paths like `/news/2004/01/10/my-story` to `/blog/2004/01/10/my-story`
 
 ## Query Params
 
+You can also use query parameters in your URL matches. The following match will redirect a URL like: `/store?id=my-blog-post` to `/blog/my-blog-post` with a `301` redirect:
 
 ```
 /story id=:id  /blog/:id  301
 ```
 
-You can also use query parameters in your URL matches. The following match will redirect a URL like: `/store?id=my-blog-post` to `/blog/my-blog-post` with a `301` redirect. -->
-
 Just add separate key/value pairs separated by space to match more than one query parameter.
 
 ## History Pushstate and Single Page Apps
 
+If you're developing a single page app and want history pushstate to work so you get clean urls, you'll want to enable this rewrite rule:
+
 ```
     /*    /index.html   200
 ```
-If you're developing a single page app and want history pushstate to work so you get clean urls, you'll want to enable this rewrite rule -->
 
 This will effectively serve the index.html instead of giving a 404 no matter what URL the browser requests.
 
 ## Proxying
 
+Just like you can rewrite paths like `/*` to `/index.html`, you can also set up rules to let parts of your site proxy to external services. Let's say you need to communicate from a Single Page App with an API on https://api.example.com that doesn't support CORS request. This rule will let you use `/api/` from your JavaScript client:
+
 ```
     /api/*  https://api.example.com/:splat  200
 ```
-Just like you can rewrite paths like `/*` to `/index.html`, you can also set up rules to let parts of your site proxy to external services. Let's say you need to communicate from a Single Page App with an API on https://api.example.com that doesn't support CORS request. This rule will let you use `/api/` from your JavaScript client -->
 
 Now all requests to `/api/`... will be proxied through to `https://api.example.com` straight from our CDN servers. If the API supports standard HTTP caching mechanisms like Etags or Last-Modified headers, the responses will even get cached by CDN nodes.
 
 ## Note on shadowing
 
+By default, you can't shadow a URL that actually exists within the site when using a splat or dynamic path segment. This means that even if you've setup this rewrite rule:
+
+
 ```
     /*   /index.html   200
 ```
 
-By default, you can't shadow a URL that actually exists within the site when using a splat or dynamic path segment. This means that even if you've setup this rewrite rule -->
-
-
-
 The path `/partials/chat.html` would still render the contents of that file, if that file actually exists. This tends to be the preferred behavior when setting up rewrite rules for single page apps, etc.
+
+However, if you're 100% sure that you'll always want to redirect, even when the URL matches a static file, you can append an exclamation mark to the rule:
+
 
 ```
     /app/*  /app/index.html  200!
 ```
-However, if you're 100% sure that you'll always want to redirect, even when the URL matches a static file, you can append an exclamation mark to the rule -->
 
 This will rewrite everything within `/app/*` to `/app/index.html` even if a file matches the URL.
 

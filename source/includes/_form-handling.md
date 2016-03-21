@@ -6,6 +6,8 @@ It's a good idea to set a **name** attribute on the form so you can easily ident
 
 You can point the **action** attribute on the form to one of your html pages to show a custom thank-you message on successful form submission.
 
+Here's an example:
+
 ``` html
 <form name="contact" action="thank-you" netlify>
   <p>
@@ -25,7 +27,6 @@ You can point the **action** attribute on the form to one of your html pages to 
   </p>
 </form>
 ```
-Here's an example -->
 
 ## Receiving Submissions
 
@@ -48,6 +49,9 @@ As an alternative to this you can use a **honeypot** field to trick spam bots.
 
 To take advantage of this, just add a `netlify-honeypot` attribute to your form with the name of your hidden field. Then make sure that field is present in the form, but hidden via CSS or JavaScript.
 
+
+Here's a simple example:
+
 ``` html
 <form name="contact" netlify netlify-honeypot="bot-field">
   <p><label>Email: <input name="email"></label></p>
@@ -57,8 +61,6 @@ To take advantage of this, just add a `netlify-honeypot` attribute to your form 
 </form>
 ```
 
-Here's a simple example -->
-
 Now if someone enters any value in the `bot-field`, netlify will quietly discard the form submission.
 
 ## Ajax Form Submissions
@@ -66,6 +68,8 @@ Now if someone enters any value in the `bot-field`, netlify will quietly discard
 You can submit forms over Ajax as well, just use the `action` attribute of the form as the target for the Ajax request.
 
 Note that we add a hidden field to the form called **form-name** with the **name** attribute of the form. Make sure to include this in your Ajax request.
+
+Here's a simple jQuery example:
 
 ``` js
 $("#my-form").submit(function(e) {
@@ -77,5 +81,3 @@ $("#my-form").submit(function(e) {
   });
 });
 ```
-
-Here's a simple jQuery example -->
