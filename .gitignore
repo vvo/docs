@@ -3,3 +3,8 @@
 *.pyc
 *.swp
 db/*
+
+# target dirs
+build/
+site/
+target/
