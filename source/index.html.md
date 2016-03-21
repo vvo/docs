@@ -15,12 +15,6 @@ includes:
   - prerendering
   - github-permissions
   - api
-  - rest
-  - rest_sites
-  - rest_deploys
-  - rest_submissions
-  - rest_forms
-  - rest_hooks
   - errors
 
 search: true
