@@ -32,13 +32,14 @@ page_class: guides
 
 [Netlify](http://www.netlify.com) builds, deploys and hosts your front end.
 
+
+Deploying a new site with Netlify is so simple it fits in a tweet:
+
 ``` shell
 npm install netlify-cli -g
 cd my-site-folder
 netlify deploy
 ```
-
-Deploying a new site with Netlify is so simple it fits in a tweet. -->
 
 This is all you need to deploy a static site folder, but Netlify can do much more for you.
 
