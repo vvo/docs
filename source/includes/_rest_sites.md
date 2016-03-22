@@ -64,7 +64,7 @@ Examples using the `:site_id` as a domain or an ID:
 ## Create Site
 
 <aside class='notice'>
-These passwords are simple. They are meant to do basic auth, send a site to a client only. Not secure against a determined attacker. They are sent and stored in plain text, but all over HTTPS. See // TODO <LINK TO PASSWORD SECTION> // for more information.
+These passwords are simple. They are meant to as a basic password protection for sharing a site with a client. Not secure against a determined attacker. They are sent and stored in plain text, but all over HTTPS. See // TODO <LINK TO PASSWORD SECTION> // for more information.
 </aside>
 
 ``` http
@@ -90,7 +90,13 @@ POST /sites HTTP/1.1
     }
   },
   "repo": {
-    // TODO @Matt -example please! & we should link here too
+    "id": "321425345",
+    "provider": "github",
+    "repo": "netlify/docs",
+    "branch": "master",
+    "deploy_key_id": "e34200000b123",
+    "dir": "build/",
+    "cmd": "middleman build"
   }
 }
 ```

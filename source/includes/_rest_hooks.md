@@ -40,13 +40,6 @@ The response will contain:
 
 ## Get Hooks for a Site
 
-Each type has a series of fields that you need to set to create a new hook, and a list of events that they can be triggered by.
-
-<aside class=notice>
-This endpoint uses query parameters, not the url path
-</aside>
-<!-- TODO @matt could you site the spec on why? -->
-
 ``` http
 GET /hooks?site_id={:site_id} HTTP/1.1
 ```
@@ -66,6 +59,12 @@ GET /hooks?site_id={:site_id} HTTP/1.1
   }
 ]
 ```
+
+Each type has a series of fields that you need to set to create a new hook, and a list of events that they can be triggered by.
+
+<aside class=notice>
+This endpoint uses query parameters, not the url path. They follow the [REST Hooks spec](http://resthooks.org/.)
+</aside>
 
 ## Create a new Hook
 

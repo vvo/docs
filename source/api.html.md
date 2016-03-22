@@ -54,7 +54,7 @@ X-RateLimit-Remaining: 56
 X-RateLimit-Reset: 1372700873
 ```
 
-If you need higher limits, please [contact us](TODO).
+If you need higher limits, please [contact us](mailto:hello@netlify.com).
 
 ## Pagination
 
