@@ -58,23 +58,44 @@ GET /sites/{:site_id}/snippets/{:snippet_id} HTTP/1.1
 }
 ```
 
-<!-- TODO what are the responses for these? -->
-
 ## Add a Snippet
 
 ``` http
 POST /sites/{:site_id}/snippets HTTP/1.1
 ```
 
-<!-- TODO example -->
+> Example Response:
+
+```json
+{
+  "id":0,
+  "title":"Test",
+  "general":"<script>alert(\"Hello\")</script>",
+  "general_position":"head",
+  "goal":"",
+  "goal_position":"footer"
+}
+```
 
 ## Update a Snippet
 
 Replaces the old snippet
 
-
 ``` http
 PUT /sites/{:site_id}/snippets/{:snippet_id} HTTP/1.1
+```
+
+> Example Response:
+
+```json
+{
+  "id":0,
+  "title":"Test",
+  "general":"<script>alert(\"Hello\")</script>",
+  "general_position":"head",
+  "goal":"",
+  "goal_position":"footer"
+}
 ```
 
 ## Delete Snippet

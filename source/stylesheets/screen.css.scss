@@ -588,13 +588,14 @@ html, body {
     pre, blockquote {
       padding: 2em $main-padding;
       margin: 0;
-      width: 80%;
+      max-width: 61em;
 
       float:none;
     }
 
     p {
       margin-right: 2em;
+      max-width: 61em;
     }
 
     h1, h2 {
@@ -602,9 +603,13 @@ html, body {
       margin-right: 0;
     }
 
+    img {
+      max-width: 56em;
+    }
+
     aside {
       margin-left: 2em;
-      width: 80%;
+      max-width: 61em;
     }
 
     .highlight {
