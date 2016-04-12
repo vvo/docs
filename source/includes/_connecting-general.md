@@ -30,7 +30,7 @@ Now that you’ve connected netlify and GitHub, you can see a list of your Git r
 
 ## Step 5: Configure Your Settings
 
-![step 5 - configure](https://raw.githubusercontent.com/munkymack/netlify-assets/master/Step5Gatsby.png)
+![step 5 - configure](images/Configuredeploy.png)
 
 Here you can configure your options. Below are some examples of configuring your site for common build tools:
 
