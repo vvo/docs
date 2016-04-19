@@ -3,6 +3,7 @@ title: API Reference
 
 language_tabs:
   - http
+  - shell
 
 toc_footers:
   - <a href='https://app.netlify.com/applications'>Start a new application!</a>
@@ -16,6 +17,7 @@ includes:
   - rest_files
   - rest_snippets
   - rest_metadata
+  - rest_dns
 
 search: true
 ---
