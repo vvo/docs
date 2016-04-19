@@ -54,6 +54,7 @@ Expose | images/_site | cd images && ../expose/expose.sh
 Hexo | /public | hexo generate
 Brunch | /public | brunch build
 Pelican | /output | pelican content
+Cactus | /.build | cactus build
 
 
 For **Jekyll hosting**, make sure you have a Gemfile and a Gemfile.lock checked into your repository, specifying the Jekyll version you want to use.

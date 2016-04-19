@@ -12,6 +12,12 @@ Pick a title that describes the hook (ie. Google Calendar Hook), then netlify wi
 
 When you send a POST request to this URL, netlify will trigger a new build of your site.
 
+Here's an example of how to trigger an incoming buildhook. Make sure to set a POST body with an empty JSON object. 
+
+``` shell
+curl -X POST -d '{}' -H "Content-Type: application/json" https://api.netlify.com/build_hooks/56c5a53971e20a23a000000c
+```
+
 ## Outgoing Webhooks
 
 From netlify's notification setting you can configure different types of hooks that will get triggered by events on your site.
