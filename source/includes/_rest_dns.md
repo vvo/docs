@@ -99,7 +99,7 @@ curl \
 ```
 
 
-## Listing all the DNS Records
+## Listing All DNS Records
 ``` shell
 curl
   -H "Authorization: Bearer {:auth_token}" \
@@ -153,15 +153,13 @@ curl
 }
 ```
 
-## Creating a linked DNS Record
+## Creating a Linked DNS Record
 
-These records directly creates an link between your site and our traffic director.
+These records directly create an link between your site and our traffic director.
 
-Optionally you specify the hostname in the request, otherwise we will
-use the custom_domain associated with the site.
+Optionally you specify the hostname in the request, otherwise we will use the custom_domain associated with the site.
 
-This endpoint requires that a site be specified. Its response is the same as
-the normal create endpoint.
+This endpoint requires that a site be specified. Its response is the same as the normal create endpoint.
 
 The payload should be specified with `type` set to "NETLIFY" and the `value` should be the `site_id` of your site.
 
