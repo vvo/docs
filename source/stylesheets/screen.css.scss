@@ -35,19 +35,6 @@ html, body {
   -webkit-text-size-adjust: none; /* Never autoresize text */
 }
 
-.navbar {
-  width: 100%;
-  height: 40px;
-  background: pink;
-  z-index: 100;
-  position: fixed;
-  top: 0;
-
-  &:after {
-    content: "eat me holden"
-  }
-}
-
 ////////////////////////////////////////////////////////////////////////////////
 // TABLE OF CONTENTS
 ////////////////////////////////////////////////////////////////////////////////
