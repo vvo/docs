@@ -1,3 +1,6 @@
+# This is deprecated. 
+We currently don't expose our docs (as they're part of our main site). Feel free to ping in support if you notice or want to help make it better!
+
 # Netlify Docs
 
 This is the documentation for Netlify.
